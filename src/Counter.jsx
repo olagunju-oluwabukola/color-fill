@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 const Counter = () => {
     const [Counter, setCounter] =useState(0)
  useEffect(()=>{
-  alert('you have changed the counter to'+ '' + Counter)
+  
  }, [])
   return (
     <div>

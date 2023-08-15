@@ -8,7 +8,7 @@ import Counter from './Counter'
 import Info from './Info'
 import Props from './Props'
 import Clock from './Clock'
-import Todo from './Todo'
+import Mytodo from './Mytodo'
 function App() {
  const date = 'wednesday'
 const [colorValue, setColorValue] = useState('')
@@ -21,7 +21,7 @@ const [colorValue, setColorValue] = useState('')
   <Info name={'fola'} DOB='02-10-2007' title={'React Props'} level= {'upper'}/>
   <Props title={['olu', 'wole', 'jide']} />
    <Clock/>
-   <Todo/>
+   <Mytodo/>
     </div>
    
     </>
