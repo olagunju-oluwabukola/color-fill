@@ -21,7 +21,7 @@ const [colorValue, setColorValue] = useState('')
   <Info name={'fola'} DOB='02-10-2007' title={'React Props'} level= {'upper'}/>
   <Props title={['olu', 'wole', 'jide']} />
    <Clock/>
-   <Mytodo/>
+  <Mytodo/>
     </div>
    
     </>

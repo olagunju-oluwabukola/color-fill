@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+
+
 const Mytodo = () => {
    const [items, setItems] = useState([
 {
@@ -18,6 +20,11 @@ const Mytodo = () => {
   checked:false
 },
    ])
+ 
+   const deleteItem =(id)=>{
+    setItems(items.filter((item)=>item.id !== id
+    ))
+  }
   return (
     <div>
        <ul>
@@ -25,8 +32,8 @@ const Mytodo = () => {
    
       <li key={item.id}>
         <input type="checkbox" checked={item.checked}/>
-        <label >{item.task}</label>
-        <button>Delete</button>
+        <label >{item.task}</label> <br />
+        <button onClick={()=>deleteItem()}>Delete</button>
       </li>
    
    ))}
